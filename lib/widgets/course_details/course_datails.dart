@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_page/constants/app_color.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class CourseDetails extends StatelessWidget {
@@ -30,6 +31,7 @@ class CourseDetails extends StatelessWidget {
               Text(
                 'PROGRAMER MALAS',
                 style: TextStyle(
+                    color: kTextColor,
                     fontWeight: FontWeight.w800,
                     height: 0.9,
                     fontSize: titleSize),
@@ -39,7 +41,7 @@ class CourseDetails extends StatelessWidget {
                 height: 30,
               ),
               Text(
-                "Hai , malas yang mengungkungku Kuingin menghancurkanmu Karena kau telah menelan masaku Hai, malas yang selalu lekat menyelinggkup tubuhku Pada tiap sisi ruang dan waktu Bodohnya aku tak kuasa menepis keangkuhanmu Meski telah kuupayakan",
+                "Malas itu kata yang jelek. Aku lebih suka menyebutnya partisipasi selektif.",
                 style: TextStyle(
                   fontSize: descriptionSize,
                   height: 1.7,
