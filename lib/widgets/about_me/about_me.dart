@@ -12,13 +12,15 @@ class AboutMe extends StatelessWidget {
             style: TextStyle(
               color: kTextColor,
               fontWeight: FontWeight.bold,
-              fontSize: 30,
+              fontSize: 32,
             ),
           ),
+          SizedBox(height: 30),
           Text(
-            "Alwi Jaya Anak IT Yang serba bisa awowkwkwk :v",
-            style: TextStyle(color: Colors.black87),
-          )
+            "Dari pertama kali mengatahui komputer saya mulai benar-benar tertarik dengan komputer segala hal yang berkaitan dengan komputer semua saya sukai dan saya benar-benar fokus dalam mempelajari hal-hal baru yang saya rasakan dikomputer sampai dimana saya menginjak kelas 2 SMA saya benar-benar tertarik dengan proses pembuatan game disanalah awal mula saya mengenal apa yang dinamakan coding dan semua tetap berjalan dengan banyak hal hingga saya mengambil jurusan IT yang dimana benar-benar membuka mata saya dimana saya berkumpul dengan orang-orang hebat lainnya dalam bidang IT",
+            style: TextStyle(color: Colors.grey, fontSize: 18),
+            textAlign: TextAlign.center,
+          ),
         ],
       ),
     );

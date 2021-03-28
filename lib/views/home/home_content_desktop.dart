@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:profile_page/constants/app_color.dart';
 import 'package:profile_page/widgets/about_me/about_me.dart';
 import 'package:profile_page/widgets/call_to_action/call_to_action.dart';
+import 'package:profile_page/widgets/card_portofolio/portofolio.dart';
 import 'package:profile_page/widgets/course_details/course_datails.dart';
 import 'package:profile_page/widgets/list_skills/card_skills.dart';
 
@@ -22,7 +23,11 @@ class HomeContentDesktop extends StatelessWidget {
                 CourseDetails(),
                 Expanded(
                   child: Center(
-                    child: CallToAction('Stalking Me!'),
+                    child: Container(
+                      height: 280,
+                      child: Image.asset('assets/images/profile.png'),
+                      decoration: BoxDecoration(shape: BoxShape.circle),
+                    ),
                   ),
                 )
               ],
@@ -41,22 +46,19 @@ class HomeContentDesktop extends StatelessWidget {
                       "3D adalah pekerjaan yang menarik dan pastinya melelahkan",
                 ),
                 CardSkills(
-                  iconData: Icons.design_services_outlined,
-                  title: "3D Animation",
-                  subTitle:
-                      "3D adalah pekerjaan yang menarik dan pastinya melelahkan",
+                  iconData: Icons.gamepad_outlined,
+                  title: "UNITY",
+                  subTitle: "Game Developer karena suka bermain game",
                 ),
                 CardSkills(
-                  iconData: Icons.design_services_outlined,
-                  title: "3D Animation",
-                  subTitle:
-                      "3D adalah pekerjaan yang menarik dan pastinya melelahkan",
+                  iconData: Icons.sentiment_satisfied_alt,
+                  title: "Adobe XD",
+                  subTitle: "Design UI/UX sebuah aplikasi atau mobile app",
                 ),
                 CardSkills(
-                  iconData: Icons.design_services_outlined,
-                  title: "3D Animation",
-                  subTitle:
-                      "3D adalah pekerjaan yang menarik dan pastinya melelahkan",
+                  iconData: Icons.code_outlined,
+                  title: "Web dan Mobile",
+                  subTitle: "mobile app utamalah",
                 ),
               ],
             ),
@@ -64,6 +66,10 @@ class HomeContentDesktop extends StatelessWidget {
               height: 50,
             ),
             AboutMe(),
+            SizedBox(
+              height: 50,
+            ),
+            Portofolio(),
           ],
         ),
       ),
