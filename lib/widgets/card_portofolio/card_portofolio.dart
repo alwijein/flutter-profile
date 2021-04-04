@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:profile_page/widgets/card_portofolio/card_portofolio_desktop.dart';
+import 'package:profile_page/widgets/card_portofolio/card_portofolio_mobile.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class CardPortofolio extends StatelessWidget {
   final String fotoPortofolio;
@@ -9,13 +12,13 @@ class CardPortofolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 300,
-      width: 370,
-      decoration: BoxDecoration(
-        color: Colors.white,
+    return ScreenTypeLayout(
+      mobile: CardPortofolioMobile(
+        fotoPortofolio: fotoPortofolio,
       ),
-      child: Image.asset(fotoPortofolio),
+      tablet: CardPortofolioDesktop(
+        fotoPortofolio: fotoPortofolio,
+      ),
     );
   }
 }

@@ -18,19 +18,15 @@ class NavigationBarTabletDesktop extends StatelessWidget {
             children: <Widget>[
               NavBarItem('Home'),
               SizedBox(
-                width: 60,
+                width: 50,
               ),
               NavBarItem('About'),
               SizedBox(
-                width: 60,
-              ),
-              NavBarItem('Project'),
-              SizedBox(
-                width: 60,
+                width: 50,
               ),
               NavBarItem('Portofolio'),
               SizedBox(
-                width: 60,
+                width: 50,
               ),
               NavBarItem('Team'),
             ],

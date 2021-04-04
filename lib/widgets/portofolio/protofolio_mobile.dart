@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:profile_page/constants/app_color.dart';
 import 'package:profile_page/widgets/card_portofolio/card_portofolio.dart';
 
-class Portofolio extends StatelessWidget {
-  const Portofolio({
+class PortofolioMobile extends StatelessWidget {
+  const PortofolioMobile({
     Key key,
   }) : super(key: key);
 
@@ -23,37 +23,25 @@ class Portofolio extends StatelessWidget {
         SizedBox(
           height: 30,
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            CardPortofolio(
-              fotoPortofolio: 'assets/images/lol.png',
-            ),
-            CardPortofolio(
-              fotoPortofolio: 'assets/images/Koper001.png',
-            ),
-            CardPortofolio(
-              fotoPortofolio: 'assets/images/Liveroom.png',
-            ),
-          ],
-        ),
-        SizedBox(
-          height: 30,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+        Column(
           children: [
             CardPortofolio(
               fotoPortofolio: 'assets/images/potion2.png',
             ),
             CardPortofolio(
+              fotoPortofolio: 'assets/images/web001.jpeg',
+            ),
+            CardPortofolio(
+              fotoPortofolio: 'assets/images/Liveroom.png',
+            ),
+            CardPortofolio(
               fotoPortofolio: 'assets/images/pertamina.png',
             ),
             CardPortofolio(
-              fotoPortofolio: 'assets/images/web001.jpeg',
+              fotoPortofolio: 'assets/images/ilustrations-003.png',
             ),
           ],
-        ),
+        )
       ],
     );
   }

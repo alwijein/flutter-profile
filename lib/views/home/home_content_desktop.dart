@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:profile_page/constants/app_color.dart';
 import 'package:profile_page/widgets/about_me/about_me.dart';
 import 'package:profile_page/widgets/call_to_action/call_to_action.dart';
-import 'package:profile_page/widgets/card_portofolio/portofolio.dart';
 import 'package:profile_page/widgets/course_details/course_datails.dart';
+import 'package:profile_page/widgets/foto_profile/foto_profile.dart';
 import 'package:profile_page/widgets/list_skills/card_skills.dart';
+import 'package:profile_page/widgets/portofolio/portofolio.dart';
 
 class HomeContentDesktop extends StatelessWidget {
   const HomeContentDesktop({Key key}) : super(key: key);
@@ -23,11 +24,7 @@ class HomeContentDesktop extends StatelessWidget {
                 CourseDetails(),
                 Expanded(
                   child: Center(
-                    child: Container(
-                      height: 280,
-                      child: Image.asset('assets/images/profile.png'),
-                      decoration: BoxDecoration(shape: BoxShape.circle),
-                    ),
+                    child: FotoProfile(),
                   ),
                 )
               ],
