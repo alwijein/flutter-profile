@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:profile_page/widgets/navigation_bar/nav_bar_item.dart';
 import 'package:profile_page/widgets/navigation_bar/nav_bar_logo.dart';
 
+const _url = 'https://github.com/ArchCodies';
+
 class NavigationBarTabletDesktop extends StatelessWidget {
   const NavigationBarTabletDesktop({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,15 +21,7 @@ class NavigationBarTabletDesktop extends StatelessWidget {
               SizedBox(
                 width: 50,
               ),
-              NavBarItem('About'),
-              SizedBox(
-                width: 50,
-              ),
-              NavBarItem('Portofolio'),
-              SizedBox(
-                width: 50,
-              ),
-              NavBarItem('Team'),
+              NavBarItem('Github'),
             ],
           )
         ],
